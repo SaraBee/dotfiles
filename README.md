@@ -9,6 +9,7 @@ Yeah, I know tmux.conf doesn't *really* belong in here.
 
 ### Setup ###
 If you've already got stuff in .vim, back it up. Then we're gonna download this stuff and then make some symlinks:
+    
     git clone git://github.com/SaraBee/dotfiles.git ~/.vim
     ln -s ~/.vim/vimrc ~/.vimrc
     ln -s ~/.vim/tmux.conf ~/.tmux.conf
