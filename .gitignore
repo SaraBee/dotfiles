@@ -1,0 +1,8 @@
+tmp/
+tags
+*~
+*.swp
+.netrwhist
+plugged/
+autoload/
+.DS_Store
