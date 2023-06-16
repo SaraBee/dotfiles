@@ -23,7 +23,7 @@ print "Created symlinks"
 # Installing vim Plug and plugins
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-vim -es -u vimrc -i NONE -c "PlugInstall" -c "qa"
+vim +PlugInstall +qall
 print "vim plugins installed"
 
 # For MacOS, grab stuff for iTerm
