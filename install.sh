@@ -8,10 +8,11 @@ function print {
 function link {
   file="$1"
   if [ ! -e $HOME/$file -a ! -L $HOME/$file ]; then
-    print "Creating link for $file"
+    print "Creating link for $file..."
     ln -s $HOME/dotfiles/$file $HOME/$file
   else
-    print "$file exists, skipping"
+    print "Appending Sara's config to $file..."
+    cat $HOME/dotfiles/$file >> $HOME/$file
   fi
 }
 
