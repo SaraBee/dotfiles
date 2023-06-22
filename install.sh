@@ -7,9 +7,9 @@ function print {
 
 function link {
   file="$1"
-  if [ ! -e ~/$file -a ! -L ~/$file ]; then
+  if [ ! -e $HOME/$file -a ! -L $HOME/$file ]; then
     print "Creating link for $file"
-    ln -s ~/dotfiles/$file ~/$file
+    ln -s $HOME/dotfiles/$file $HOME/$file
   else
     print "$file exists, skipping"
   fi
